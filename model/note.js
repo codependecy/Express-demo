@@ -28,7 +28,7 @@ var Note = sequelize.define('note',{
         type: Sequelize.STRING
     }
 })
-// Note.sync()
+Note.sync({force:true})
 
 // Note.sync().then(function(){
 //     Note.create({text: 'hello'})

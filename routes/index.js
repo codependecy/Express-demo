@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     loginData = {
       isLogin: true,
       user: {
-        avator: req.session.user.avator,
+        avatar: req.session.user.avatar,
         username: req.session.user.username
       }
     }
