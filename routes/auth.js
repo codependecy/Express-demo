@@ -20,9 +20,9 @@ passport.deserializeUser(function(obj, done) {
 //github登录接口
 
 passport.use(new GitHubStrategy({
-    clientID: 'b7bfd7fcc56fdb76ad7f',
-    clientSecret: 'acbbfd5555ded60add3c1069a75d5fd32301b621',
-    callbackURL: "http://localhost:3000/auth/github/callback"
+    clientID: 'e00d14c24417e3aec179',
+    clientSecret: '459749cfe5eb1a97cf1236c06b8fca43a4f228ce',
+    callbackURL: "http://203.195.212.100:3000/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // User.findOrCreate({ githubId: profile.id }, function (err, user) {

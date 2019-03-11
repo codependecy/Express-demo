@@ -18,15 +18,15 @@ var sequelize = new Sequelize(undefined,undefined,undefined,{
 //       console.log('Unable to connect to the database',err)
 //   })
 
-// ID 内容  创建时间  更新时间
+// ID 内容 用户登录id 创建时间  更新时间
 
 var Note = sequelize.define('note',{
     text:{
         type: Sequelize.STRING
     },
-    // uid: {
-    //     type: Sequelize.STRING
-    // }
+    uid: {
+        type: Sequelize.STRING
+    }
 })
 // Note.sync()
 
